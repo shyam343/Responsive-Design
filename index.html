@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>SAHResponsive Website</title>
+</head>
+<body>
+  <header>
+    <div id="brand"><a href="#">SAHWEBSITE</a></div>
+    <nav>
+      <ul class="desktop-menu">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <ul class="mobile-menu">
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="main-banner">
+    <img src="./images/Main-Banner.png" alt="Main Banner" class="banner-image" />
+  </section>
+
+  <section class="tutorial-gallery">
+    <h2>Tutorial Gallery</h2>
+    <div class="gallery-items">
+      <div class="tutorial-item">
+        <img src="./images/java.png" alt="Java for Beginners" />
+        <p>Java for Beginners</p>
+        <span>12000₹</span>
+        <a href="#" class="download-btn">Download Now</a>
+      </div>
+      <div class="tutorial-item">
+        <img src="./images/javascript.png" alt="Key for JavaScript" />
+        <p>JavaScript Tutorials</p>
+        <span>10000₹</span>
+        <a href="#" class="download-btn">Download Now</a>
+      </div>
+      <div class="tutorial-item">
+        <img src="./images/htmlcss.png" alt="HtmlCss for Beginners" />
+        <p>HtmlCss for Beginners</p>
+        <span>5000₹</span>
+        <a href="#" class="download-btn red-btn">Download Now</a>
+      </div>
+      <div class="tutorial-item">
+        <img src="./images/react.png" alt="ReactJs Development" />
+        <p>ReactJs For Tutorials</p>
+        <span>4000₹</span>
+        <a href="#" class="download-btn">Download Now</a>
+      </div>
+    </div>
+    <a href="#" class="see-more-btn">See More</a>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 SAHWEBSITE. All rights reserved.</p>
+      <ul class="socials">
+        <li><a href="#"><img src="./images/facebook-icon.png" alt="Facebook" /></a></li>
+        <li><a href="#"><img src="./images/twitter-icon.png" alt="Twitter" /></a></li>
+        <li><a href="#"><img src="./images/instagram-icon.png" alt="Instagram" /></a></li>
+        <li><a href="#"><img src="./images/linkedin-icon.png" alt="LinkedIn" /></a></li>
+      </ul>
+    </div>
+  </footer>
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+/* General styles (for larger screens by default) */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #18a518;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#brand a {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.desktop-menu {
+  display: flex;
+  list-style: none;
+}
+
+.desktop-menu li {
+  margin: 0 15px;
+}
+
+.desktop-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.desktop-menu li a:hover {
+  color: #ddd;
+}
+
+#hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #18a518;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 15px;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-menu li a:hover {
+  color: #ddd;
+}
+
+/* Main banner */
+.main-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Tutorial Gallery */
+.tutorial-gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.tutorial-gallery h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tutorial-item {
+  background-color: white;
+  width: 250px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tutorial-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.tutorial-item p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.tutorial-item span {
+  font-size: 14px;
+  color: #888;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.red-btn {
+  background-color: #ff414d;
+}
+
+.see-more-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff414d;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Responsive styles */
+
+/* Tablets (portrait) */
+@media (max-width: 1024px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .gallery-items {
+    justify-content: center;
+  }
+
+  .tutorial-item {
+    width: 45%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .banner-image {
+    max-height: 300px;
+  }
+
+  .tutorial-item {
+    width: 90%;
+    margin: 10px 0;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .tutorial-item {
+    width: 100%;
+  }
+
+  .main-banner img {
+    height: 250px;
+    object-fit: cover;
+  }
+}
+/* Footer Code*/
+
+/* Footer styles */
+footer {
+  background-color: #d4742c;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials li a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.socials li a img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive styles for the footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .socials {
+    margin-top: 10px;
+  }
+}
